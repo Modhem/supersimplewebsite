@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tooltip</title>
+
+    <style>
+
+     
+      .ex-button{
+        padding: 10px;
+        background-color: lightgrey;
+        border-radius: 2px;
+        border-style: none;
+        margin-left: 15px;
+        margin-top: 15px;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .ex-button .tooltip {
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap;
+      }
+
+      .ex-button:hover .tooltip {
+        opacity: 1;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="div-button">
+      <button class="ex-button">
+        Exercice
+        <div class="tooltip">
+          Recherche
+        </div>
+      </button>
+    </div>
+
+
+  </body>
+</html>
